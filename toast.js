@@ -14,13 +14,15 @@ const Toast = (function () {
         --toast-fade-delay: 3s;   /* how long it stays visible  */
         --toast-fade-time : .4s;  /* length of the fade itself  */
         background: #ffffff;
-        min-width: 250px;
+        width: 320px;
+        min-height: 64px;
+        max-height: 800px;
         margin: 10px;
-        padding: 12px 18px;
+        padding: 14px;
         border-radius: 6px;
         font-weight: 400;
-        font-size: 14px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        font-size: 16px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
         opacity: 0;
         font-family: "Nunito", "Segoe UI", sans-serif;
         z-index: 1055;
@@ -48,7 +50,7 @@ const Toast = (function () {
       @keyframes slideInDown  { to { opacity: 1; transform: translate(-50%, 0); } }
       @keyframes slideInUp    { to { opacity: 1; transform: translate(-50%, 0); } }
 
-      @keyframes fadeOut { to { opacity: 0; } }`;
+      `;
     document.head.appendChild(style);
   })();
 
@@ -56,7 +58,9 @@ const Toast = (function () {
   const toastIcons = {
     success: `
         <div class="icon-wrapper icon-success">
-            <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">.st0{fill:#2BB673;}.st1{fill:none;stroke:#FFFFFF;stroke-width:30;stroke-miterlimit:10;}</style><path class="st0" d="M489,255.9c0-0.2,0-0.5,0-0.7c0-1.6,0-3.2-0.1-4.7c0-0.9-0.1-1.8-0.1-2.8c0-0.9-0.1-1.8-0.1-2.7  c-0.1-1.1-0.1-2.2-0.2-3.3c0-0.7-0.1-1.4-0.1-2.1c-0.1-1.2-0.2-2.4-0.3-3.6c0-0.5-0.1-1.1-0.1-1.6c-0.1-1.3-0.3-2.6-0.4-4  c0-0.3-0.1-0.7-0.1-1C474.3,113.2,375.7,22.9,256,22.9S37.7,113.2,24.5,229.5c0,0.3-0.1,0.7-0.1,1c-0.1,1.3-0.3,2.6-0.4,4  c-0.1,0.5-0.1,1.1-0.1,1.6c-0.1,1.2-0.2,2.4-0.3,3.6c0,0.7-0.1,1.4-0.1,2.1c-0.1,1.1-0.1,2.2-0.2,3.3c0,0.9-0.1,1.8-0.1,2.7  c0,0.9-0.1,1.8-0.1,2.8c0,1.6-0.1,3.2-0.1,4.7c0,0.2,0,0.5,0,0.7c0,0,0,0,0,0.1s0,0,0,0.1c0,0.2,0,0.5,0,0.7c0,1.6,0,3.2,0.1,4.7  c0,0.9,0.1,1.8,0.1,2.8c0,0.9,0.1,1.8,0.1,2.7c0.1,1.1,0.1,2.2,0.2,3.3c0,0.7,0.1,1.4,0.1,2.1c0.1,1.2,0.2,2.4,0.3,3.6  c0,0.5,0.1,1.1,0.1,1.6c0.1,1.3,0.3,2.6,0.4,4c0,0.3,0.1,0.7,0.1,1C37.7,398.8,136.3,489.1,256,489.1s218.3-90.3,231.5-206.5  c0-0.3,0.1-0.7,0.1-1c0.1-1.3,0.3-2.6,0.4-4c0.1-0.5,0.1-1.1,0.1-1.6c0.1-1.2,0.2-2.4,0.3-3.6c0-0.7,0.1-1.4,0.1-2.1  c0.1-1.1,0.1-2.2,0.2-3.3c0-0.9,0.1-1.8,0.1-2.7c0-0.9,0.1-1.8,0.1-2.8c0-1.6,0.1-3.2,0.1-4.7c0-0.2,0-0.5,0-0.7  C489,256,489,256,489,255.9C489,256,489,256,489,255.9z" id="XMLID_3_"></path><g id="XMLID_1_"><line class="st1" id="XMLID_2_" x1="213.6" x2="369.7" y1="344.2" y2="188.2"></line><line class="st1" id="XMLID_4_" x1="233.8" x2="154.7" y1="345.2" y2="266.1"></line></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="#07bc0c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/>
+            </svg>
         </div>`,
     error: `
         <div class="icon-wrapper icon-error">
@@ -67,12 +71,11 @@ const Toast = (function () {
         </div>`,
     info: `
         <div class="icon-wrapper icon-info">
-            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24" cy="24" r="24" fill="#0d6efd"/>
-                <rect x="22" y="14" width="4" height="4" fill="#fff"/>
-                <rect x="22" y="20" width="4" height="14" fill="#fff"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="#3498bc" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
             </svg>
         </div>`,
+        
     warning: `
         <div class="icon-wrapper icon-warning">
             <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -129,7 +132,7 @@ const Toast = (function () {
       toast.style.animation = `${animationIn} ${slide / 1000}s forwards, fadeOut ${slide / 1000}s forwards ${fadeAt / 1000}s`;
 
       // remove after the fade completes
-      setTimeout(() => toast.remove(), stay);
+      // setTimeout(() => toast.remove(), stay);
     }
   };
 })();
