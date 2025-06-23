@@ -22,7 +22,7 @@ Download the [`toast.js`](toast.js) file and include it in your project:
 ```html
 <script src="path/to/toast.js"></script>
 ```
-<br/><br/>
+<br/>
 
 ## 🛠️ Basic Usage
 
@@ -31,7 +31,7 @@ Use the global function `showToastMessage()` to display toasts.
 ``` js
 showToastMessage('success', 'Data saved successfully!');
 ```
-<br/><br/>
+<br/>
 
 ## 🧠 Smart Usage Patterns
 
