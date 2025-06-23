@@ -12,7 +12,6 @@
 * 🖼️ Built-in SVG icons with styling
 * 💡 Smooth animations based on position
 
----
 
 ## 📦 Installation
 
@@ -38,6 +37,7 @@ Use the global function `showToastMessage()` to display toasts.
 showToastMessage('success', 'Data saved successfully!');
 ```
 
+
 ## 🧠 Smart Usage Patterns
 
 | Use Case                      | Example                                                       |
@@ -52,6 +52,7 @@ showToastMessage('success', 'Data saved successfully!');
 
 > Arguments are intelligently handled, so just focus on your message – the system figures out the rest.
 
+
 ## ⚙️ Positions
 
 You can place the toast in any of the following screen corners:
@@ -63,6 +64,7 @@ You can place the toast in any of the following screen corners:
 * `bottom-right` (default)
 * `bottom-center`
 
+
 ## 🎨 Toast Types & Icons
 
 Each toast includes a built-in SVG icon depending on the type:
@@ -72,9 +74,11 @@ Each toast includes a built-in SVG icon depending on the type:
 * ℹ️ `info` – Blue info icon
 * ⚠️ `warning` – Yellow warning icon
 
-## 🧪 Live Examples
+
+## 🧪 Live Demo
 
 Try all combinations in the interactive [Documentation & Demo Page](#) (link to your hosted doc or `index.html` preview).
+
 
 ## 💻 Developer Notes
 
@@ -82,6 +86,7 @@ Try all combinations in the interactive [Documentation & Demo Page](#) (link to 
 * Animations vary based on the toast position (slide in from relevant direction).
 * No global state pollution – safe to use in any app.
 * Fully responsive and supports mobile devices.
+
 
 ## 📁 File Structure
 
@@ -93,10 +98,12 @@ MyToast/
 └── README.md         # Project readme (you’re reading it!)
 ```
 
+
 ## 🤝 Contribution
 
 Contributions, improvements, and suggestions are always welcome!
 Please feel free to submit a pull request or open an issue.
+
 
 ## 📜 License
 
