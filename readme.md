@@ -15,12 +15,12 @@
 
 ## 📦 Installation
 
-### Option 1: Download
+### Download
 
 Download the [`toast.js`](toast.js) file and include it in your project:
 
 ```html
-<script src="path/to/toast.js"></script><br/>
+<script src="path/to/toast.js"></script><br/><br/>
 ```
 
 <!-- ### Option 2: CDN (via Githack)
@@ -36,8 +36,7 @@ Use the global function `showToastMessage()` to display toasts.
 ```js
 showToastMessage('success', 'Data saved successfully!');
 ```
-
-<br/>
+<br/><br/>
 
 ## 🧠 Smart Usage Patterns
 
@@ -51,7 +50,7 @@ showToastMessage('success', 'Data saved successfully!');
 | Type + Message + Position     | `showToastMessage('info', 'Centered toast', 'bottom-center')` |
 | Message + Duration + Position | `showToastMessage('Processing...', 6000, 'top-left')`         |
 
-> Arguments are intelligently handled, so just focus on your message – the system figures out the rest.<br/>
+> Arguments are intelligently handled, so just focus on your message – the system figures out the rest.<br/><br/>
 
 ## ⚙️ Positions
 
@@ -62,7 +61,7 @@ You can place the toast in any of the following screen corners:
 * `top-center`
 * `bottom-left`
 * `bottom-right` (default)
-* `bottom-center`<br/>
+* `bottom-center`<br/><br/>
 
 ## 🎨 Toast Types & Icons
 
@@ -71,18 +70,18 @@ Each toast includes a built-in SVG icon depending on the type:
 * ✅ `success` – Green check icon
 * ❌ `error` – Red alert icon
 * ℹ️ `info` – Blue info icon
-* ⚠️ `warning` – Yellow warning icon<br/>
+* ⚠️ `warning` – Yellow warning icon<br/><br/>
 
 ## 🧪 Live Demo
 
-Try all combinations in the interactive [Documentation & Demo Page](https://munaimpro.github.io/lite-toast/)<br/>
+Try all combinations in the interactive [Documentation & Demo Page](https://munaimpro.github.io/lite-toast/)<br/><br/>
 
 ## 💻 Developer Notes
 
 * All toast styles are dynamically injected once.
 * Animations vary based on the toast position (slide in from relevant direction).
 * No global state pollution – safe to use in any app.
-* Fully responsive and supports mobile devices.<br/>
+* Fully responsive and supports mobile devices.<br/><br/>
 
 ## 📁 File Structure
 
@@ -93,12 +92,11 @@ MyToast/
 ├── index.html        # Documentation & live demo
 └── README.md         # Project readme (you’re reading it!)
 ```
-<br/>
 
 ## 🤝 Contribution
 
 Contributions, improvements, and suggestions are always welcome!
-Please feel free to submit a pull request or open an issue.<br/>
+Please feel free to submit a pull request or open an issue.<br/><br/>
 
 ## 📜 License
 
