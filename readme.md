@@ -23,11 +23,11 @@ Download the [`toast.js`](toast.js) file and include it in your project:
 <script src="path/to/toast.js"></script>
 ```
 
-### Option 2: CDN (via Githack)
+<!-- ### Option 2: CDN (via Githack)
 
 ```html
 <script src="https://raw.githack.com/munaimpro/MyToast/main/toast.js"></script>
-
+``` -->
 
 ## 🛠️ Basic Usage
 
@@ -77,7 +77,7 @@ Each toast includes a built-in SVG icon depending on the type:
 
 ## 🧪 Live Demo
 
-Try all combinations in the interactive [Documentation & Demo Page](#) (link to your hosted doc or `index.html` preview).
+Try all combinations in the interactive [Documentation & Demo Page](https://munaimpro.github.io/lite-toast/)
 
 
 ## 💻 Developer Notes
