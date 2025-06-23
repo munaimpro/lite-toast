@@ -1,10 +1,6 @@
-Sure, Munaim! Here's a professional and polished `README.md` content tailored for your GitHub repository named `MyToast`:
+# 🔔 LiteToast – Lightweight & Elegant JavaScript Toast Notifications
 
----
-
-# 🔔 MyToast – Lightweight & Elegant JavaScript Toast Notifications
-
-**MyToast** is a minimal, flexible, and stylish vanilla JavaScript toast notification library built with zero dependencies. It's perfect for developers who want a plug-and-play toast system in any web project, whether personal or professional.
+**LiteToast** is a minimal, flexible, and stylish vanilla JavaScript toast notification library built with zero dependencies. It's perfect for developers who want a plug-and-play toast system in any web project, whether personal or professional.
 
 ## 🚀 Features
 
@@ -31,12 +27,8 @@ Download the [`toast.js`](toast.js) file and include it in your project:
 ### Option 2: CDN (via Githack)
 
 ```html
-<script src="https://raw.githack.com/your-username/MyToast/main/toast.js"></script>
-```
+<script src="https://raw.githack.com/munaimpro/MyToast/main/toast.js"></script>
 
-> Replace `your-username` with your actual GitHub username.
-
----
 
 ## 🛠️ Basic Usage
 
@@ -45,8 +37,6 @@ Use the global function `showToastMessage()` to display toasts.
 ```js
 showToastMessage('success', 'Data saved successfully!');
 ```
-
----
 
 ## 🧠 Smart Usage Patterns
 
@@ -62,8 +52,6 @@ showToastMessage('success', 'Data saved successfully!');
 
 > Arguments are intelligently handled, so just focus on your message – the system figures out the rest.
 
----
-
 ## ⚙️ Positions
 
 You can place the toast in any of the following screen corners:
@@ -75,8 +63,6 @@ You can place the toast in any of the following screen corners:
 * `bottom-right` (default)
 * `bottom-center`
 
----
-
 ## 🎨 Toast Types & Icons
 
 Each toast includes a built-in SVG icon depending on the type:
@@ -86,13 +72,9 @@ Each toast includes a built-in SVG icon depending on the type:
 * ℹ️ `info` – Blue info icon
 * ⚠️ `warning` – Yellow warning icon
 
----
-
 ## 🧪 Live Examples
 
 Try all combinations in the interactive [Documentation & Demo Page](#) (link to your hosted doc or `index.html` preview).
-
----
 
 ## 💻 Developer Notes
 
@@ -100,8 +82,6 @@ Try all combinations in the interactive [Documentation & Demo Page](#) (link to 
 * Animations vary based on the toast position (slide in from relevant direction).
 * No global state pollution – safe to use in any app.
 * Fully responsive and supports mobile devices.
-
----
 
 ## 📁 File Structure
 
@@ -113,14 +93,10 @@ MyToast/
 └── README.md         # Project readme (you’re reading it!)
 ```
 
----
-
 ## 🤝 Contribution
 
 Contributions, improvements, and suggestions are always welcome!
 Please feel free to submit a pull request or open an issue.
-
----
 
 ## 📜 License
 
