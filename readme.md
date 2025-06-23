@@ -1,6 +1,6 @@
 # 🔔 LiteToast – Lightweight & Elegant JavaScript Toast Notifications
 
-**LiteToast** is a minimal, flexible, and stylish vanilla JavaScript toast notification library built with zero dependencies. It's perfect for developers who want a plug-and-play toast system in any web project, whether personal or professional.<br/>
+**LiteToast** is a minimal, flexible, and stylish vanilla JavaScript toast notification library built with zero dependencies. It's perfect for developers who want a plug-and-play toast system in any web project, whether personal or professional.<br/><br/>
 
 ## 🚀 Features
 
@@ -10,8 +10,8 @@
 * 📌 Position options: `top-left`, `top-right`, `top-center`, `bottom-left`, `bottom-right`, `bottom-center`
 * ⏱️ Custom duration control
 * 🖼️ Built-in SVG icons with styling
-* 💡 Smooth animations based on position<br/>
-
+* 💡 Smooth animations based on position
+<br/><br/>
 
 ## 📦 Installation
 
@@ -20,20 +20,15 @@
 Download the [`toast.js`](toast.js) file and include it in your project:
 
 ```html
-<script src="path/to/toast.js"></script><br/><br/>
+<script src="path/to/toast.js"></script>
 ```
-
-<!-- ### Option 2: CDN (via Githack)
-
-```html
-<script src="https://raw.githack.com/munaimpro/MyToast/main/toast.js"></script>
-``` -->
+<br/><br/>
 
 ## 🛠️ Basic Usage
 
 Use the global function `showToastMessage()` to display toasts.
 
-```js
+``` js
 showToastMessage('success', 'Data saved successfully!');
 ```
 <br/><br/>
@@ -50,7 +45,8 @@ showToastMessage('success', 'Data saved successfully!');
 | Type + Message + Position     | `showToastMessage('info', 'Centered toast', 'bottom-center')` |
 | Message + Duration + Position | `showToastMessage('Processing...', 6000, 'top-left')`         |
 
-> Arguments are intelligently handled, so just focus on your message – the system figures out the rest.<br/><br/>
+> Arguments are intelligently handled, so just focus on your message – the system figures out the rest.
+<br/><br/>
 
 ## ⚙️ Positions
 
@@ -61,7 +57,8 @@ You can place the toast in any of the following screen corners:
 * `top-center`
 * `bottom-left`
 * `bottom-right` (default)
-* `bottom-center`<br/><br/>
+* `bottom-center`
+<br/><br/>
 
 ## 🎨 Toast Types & Icons
 
@@ -70,18 +67,21 @@ Each toast includes a built-in SVG icon depending on the type:
 * ✅ `success` – Green check icon
 * ❌ `error` – Red alert icon
 * ℹ️ `info` – Blue info icon
-* ⚠️ `warning` – Yellow warning icon<br/><br/>
+* ⚠️ `warning` – Yellow warning icon
+<br/><br/>
 
 ## 🧪 Live Demo
 
-Try all combinations in the interactive [Documentation & Demo Page](https://munaimpro.github.io/lite-toast/)<br/><br/>
+Try all combinations in the interactive [Documentation & Demo Page](https://munaimpro.github.io/lite-toast/)
+<br/><br/>
 
 ## 💻 Developer Notes
 
 * All toast styles are dynamically injected once.
 * Animations vary based on the toast position (slide in from relevant direction).
 * No global state pollution – safe to use in any app.
-* Fully responsive and supports mobile devices.<br/><br/>
+* Fully responsive and supports mobile devices.
+<br/><br/>
 
 ## 📁 File Structure
 
